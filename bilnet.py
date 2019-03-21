@@ -14,9 +14,8 @@ UNSPECIFIED_FAILURE = -1
 OFF_CAMPUS = -2
 INVALID_CREDENTIALS = -3
 NO_COOKIE = -4
-FAULTY_COOKIE = -5
-BAD_REQUEST = -6
-ALREADY_CONNECTED = -7
+BAD_REQUEST = -5
+ALREADY_CONNECTED = -6
 
 parser = argparse.ArgumentParser(description="script to manage Bilnet captive portal connection")
 parser.add_argument('-l', '--logout', action='store_true', help="set this flag to logout")
@@ -93,7 +92,7 @@ def logout():
 		return UNSPECIFIED_FAILURE
 
 def make_result_string(operation, result):
-	if result == 0:
+	if result == OK:
 		return operation + " successful."
 	else:
 		result_string = operation + " failed."
