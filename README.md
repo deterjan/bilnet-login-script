@@ -1,6 +1,6 @@
 # bilnet-login-script
 
-This repository contains a python script and bash script for programmatic login to Bilnet.
+This repository contains a python script and bash script for programmatic login to Bilnet. The scripts are only tested for wi-fi connection and may not work for ethernet.
 
 ## bash script
 
